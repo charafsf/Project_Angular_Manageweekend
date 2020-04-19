@@ -1,0 +1,6 @@
+.*
+!.gitignore
+/target/
+
+#à discuter
+/data/

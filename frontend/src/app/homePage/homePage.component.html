@@ -1,0 +1,15 @@
+<mat-toolbar class ="navbar">
+  <div>Name</div>
+  <div>
+    <span>Profil</span>
+    <span> <mat-icon>settings</mat-icon></span>
+  </div>
+</mat-toolbar>
+<div class="maps">
+<agm-map [latitude]="lat" [longitude]="lng">
+  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
+</div>
+
+
+

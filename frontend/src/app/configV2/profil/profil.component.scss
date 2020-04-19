@@ -1,0 +1,34 @@
+.form-sport {
+  display: flex;
+  justify-content: center;
+}
+.matcard {
+    width: 200px;
+    height: 100px;
+}
+.matcard-Inf {
+  width:600px;
+    height: 200px;
+}
+.example-full-width {
+  width: 100%;
+} 
+
+.example-container > * {
+  width: 100%;
+} 
+.matcard-Inf {
+  margin-bottom: 40px 
+}
+.conf-sport > div {
+    margin-right: 40px;
+}
+.conf-sport {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+} 

@@ -1,0 +1,22 @@
+.form-sport {
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  display: flex;
+  justify-content: center;
+}
+.matcard {
+  width: 689px;
+  height: 500px;
+}
+.example-full-width {
+  width: 100%;
+} 
+.example-container > * {
+  width: 100%;
+} 
+.conf-sport {
+   display: flex;
+   justify-content: center;
+}

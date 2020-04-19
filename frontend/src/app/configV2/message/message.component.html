@@ -1,0 +1,15 @@
+<div class="conf-sport">
+    <mat-card class="matcard">
+      <form class="form-sport" [formGroup]="form"  (submit)="onSendInf()">
+         <div class="example-container">
+          <mat-form-field>
+            <input matInput   [formControlName]="'objet'" placeholder="objet">
+          </mat-form-field>
+          <mat-form-field>
+            <textarea matInput  [formControlName]="'message'" placeholder="message"></textarea>
+          </mat-form-field>
+          <button mat-button class="btn">Envoyer</button>
+        </div>
+    </form>
+  </mat-card>
+</div>

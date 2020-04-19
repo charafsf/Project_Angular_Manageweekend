@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>taa-backend</groupId>
+	<artifactId>taa-backend</artifactId>
+	<version>${actual.version}</version>
+	<name>TAA-BACKEND</name>
+	<description>Project week end</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>entities</module>
+        <module>repositories</module>
+        <module>controller</module>
+        <module>services</module>
+        <module>common</module>
+        <module>configuration</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<version>${spring-boot.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring-boot.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>${springfox-swagger2.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-annotations</artifactId>
+			<version>${swagger-annotations.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+			<optional>true</optional>
+		</dependency>
+	    <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+			<version>${spring-boot.version}</version>
+		</dependency>
+    </dependencies>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+        <swagger-annotations.version>1.5.24</swagger-annotations.version>
+        <lombok.version>1.18.12</lombok.version>
+        <spring-boot.version>2.1.8.RELEASE</spring-boot.version>
+        <actual.version>1.0.0-SNAPSHOT</actual.version>
+        <mysql-connector-java.version>8.0.18</mysql-connector-java.version>
+    </properties>
+    
+    <build>
+        <plugins>
+            <plugin>    
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    
+</project>

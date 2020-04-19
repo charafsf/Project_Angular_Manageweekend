@@ -1,0 +1,63 @@
+<div>
+  <mat-horizontal-stepper [linear]="true" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Fill out your information</ng-template>
+        <mat-form-field>
+          <input matInput placeholder="username" [formControlName]="'login'" required>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Last name" [formControlName]="'lastName'" required>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="First name" [formControlName]="'firstName'" required>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="email" [formControlName]="'email'" required>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="password" type="password" [formControlName]="'password'" required>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+      <form [formGroup]="secondFormGroup">
+        <ng-template matStepLabel>Fill out your address</ng-template>
+        <mat-form-field>
+            <mat-label>Which sport ?</mat-label>
+          <input matInput placeholder="Football" [formControlName]="'sport'" required>
+          <mat-icon matSuffix>sports_football</mat-icon>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Where ?</mat-label>
+          <input matInput placeholder="Address" [formControlName]="'address'" required>
+          <mat-icon matSuffix>train</mat-icon>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Weather preference ?</mat-label>
+            <mat-select matNativeControl [formControlName]="'weather'"  required>
+              <mat-option value="Sun">Sun</mat-option>
+              <mat-option value="wind">wind</mat-option>
+              <mat-option value="rain">rain</mat-option>
+            </mat-select>
+          <mat-icon matSuffix>wb_sunny</mat-icon>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+      You are now done.
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button color="primary" (click)="onRegister()">Register !</button>
+      </div>
+    </mat-step>
+  </mat-horizontal-stepper>
+</div>

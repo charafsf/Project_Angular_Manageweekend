@@ -1,0 +1,33 @@
+<div class="conf-sport">
+  <mat-card class="matcard">
+      <mat-card-title class="title"> Personnal configuration </mat-card-title>
+    <form class="form-sport" [formGroup]="form" (submit)="onSendInf()">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="firstName" [formControlName]="'firstName'">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="lastName" [formControlName]="'lastName'">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Email" [formControlName]="'email'">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+          <input matInput placeholder="password" type="password" [formControlName]="'password'">
+        </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="adress" [formControlName]="'adress'">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder=" Code Postal" [formControlName]="'codePostal'">
+      </mat-form-field>
+       
+      <button mat-button class="btn"><mat-icon>update</mat-icon> Update</button>
+    </form>
+  </mat-card>
+
+</div>
