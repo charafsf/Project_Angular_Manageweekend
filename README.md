@@ -43,4 +43,3 @@ suite a des detections de disfonctionnement au niveau de notre architecture conc
 ![alt Diagram_TAA](./resources/images/Diagram_TAA.png)
 
 #Api key for maps 
-AIzaSyBbtC93KXW2GX_GYt_W6I4t44FJNXtmTbE
